@@ -12,6 +12,9 @@ public class Main
         // System.out.println(Math.random() < 0.05);
         f.simulateOneDay(22);
         System.out.println("Current Food: " + f.getCurrentFood());
+        f = new Feeder(100);
+        f.simulateOneDay(5);
+        System.out.println("Current Food: " + f.getCurrentFood());
         f = new Feeder(2400);
         System.out.println(f.simulateManyDays(10,4) + " days");
         f = new Feeder(250);
